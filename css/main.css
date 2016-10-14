@@ -1,0 +1,75 @@
+body {
+  /*font-family: 'Lato', sans-serif;*/
+  font-family: 'Questrial', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  opacity: .70;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+}
+
+.navbar .navbar-default .navbar-nav {
+  color: rgba(255, 255, 255, 1);
+}
+
+header{
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.panel {
+  background-color: rgba(0, 0, 0, 0.3);;
+  color: white;
+  border-color: white;
+  border-radius: 2px;
+}
+
+.content {
+  text-align: left;
+  /*position: relative;*/
+  /*top: 25%;
+  transform: translateY(-25%);*/
+}
+
+.intro{
+    background-color: #F72C25;
+}
+
+.about{
+    background-color: #F7B32B;
+}
+
+.discoverfy{
+    background-color: #2AB7CA;
+}
+
+.offtopic{
+    background-color: #0A2239;
+}
+
+.ava{
+    background-color: #B7FDFE;
+}
+
+.handprints{
+    background-color: #10A35C;
+}
+.chorus{
+    background-color: #372549;
+}
+.contact{
+    background-color: #F34213;
+}
