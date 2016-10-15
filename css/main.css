@@ -15,10 +15,12 @@ body {
   border-right: 0px;
   background-color: rgba(0, 0, 0, 0.5);
   border-color: rgba(255, 255, 255, 1);
-  border-radius: 2px;
 }
 
-.navbar .navbar-default .navbar-nav {
+.navbar-default .navbar-nav > li > a {
+  color: rgba(255, 255, 255, 1);
+}
+.navbar-default .navbar-brand {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -41,10 +43,28 @@ h1.page-title {
   margin-top: 180px;
 }
 
-#intro img {
-  border: 2px solid white;
-  width: 200px;
+#intro .profile-img {
   margin-top: 100px;
+}
+
+#contact .profile-img {
+  margin: 20px auto 20px auto;
+}
+
+#contact .bottom {
+  margin-top: 20px;
+}
+
+.icons img {
+  max-height: 50px;
+  margin: 0 auto;
+}
+
+
+.profile-img {
+  border: 2px solid white;
+  padding: 0;
+  width: 200px;
 }
 
 .bottom {
@@ -60,6 +80,7 @@ h1.page-title {
 }
 
 .content {
+  /*margin-top: 60px;*/
   text-align: left;
   /*position: relative;*/
   /*top: 25%;
@@ -83,7 +104,7 @@ h1.page-title {
 }
 
 .ava{
-    background-color: #B7FDFE;
+    background-color: #F34213;
 }
 
 .handprints{
@@ -93,5 +114,5 @@ h1.page-title {
     background-color: #372549;
 }
 .contact{
-    background-color: #F34213;
+    background-color: #EDB036;
 }
