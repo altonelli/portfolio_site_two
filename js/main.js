@@ -5,10 +5,8 @@ $(document).ready(function(){
 
 
   $('.flip').click(function(){
-      $(this).find('.panel').addClass('flipped').mouseleave(function(){
-          $(this).removeClass('flipped');
-      });
-      return false;
+    console.log("clicked");
+      $(this).find('.panel').toggleClass('flipped');
   });
 
 
