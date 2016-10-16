@@ -5,7 +5,26 @@ $(document).ready(function(){
 
 
   $('.flip').click(function(){
-      $(this).find('.panel').toggleClass('flipped');
+    $(this).find('.panel').toggleClass('flipped');
+  });
+
+  $(".scrollableLink").click(function(e){
+    var target = $(this.getAttribute('href'));
+    console.log(target);
+
+    if (target.selector == "#"){
+      console.log("hitting #");
+      e.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: "0px"
+      }, 1000);
+    }
+    if( target.length ) {
+      e.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top
+      }, 1000);
+    }
   });
 
 
