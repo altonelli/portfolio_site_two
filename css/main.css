@@ -58,7 +58,7 @@ h3.page-title {
   margin-top: 20px;
 }
 
-.icons img {
+.icon {
   max-height: 50px;
   margin: auto;
 }
@@ -82,6 +82,10 @@ h3.page-title {
   border-radius: 2px;
   margin-top: 20px;
   min-height: 400px;
+}
+
+.flip{
+  min-height: 400px;
   width: 400px;
   display: block;
   margin-left: auto;
@@ -91,21 +95,13 @@ h3.page-title {
 .panel-footer {
   background-color: transparent;
   color: white;
-  position:absolute;
-  bottom:0;
-}
-
-.about-pic{
-  position:relative;
 }
 
 
 .content {
-  /*margin-top: 60px;*/
+
   text-align: left;
-  /*position: relative;*/
-  /*top: 25%;
-  transform: translateY(-25%);*/
+
 }
 
 .intro{

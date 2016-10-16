@@ -5,7 +5,6 @@ $(document).ready(function(){
 
 
   $('.flip').click(function(){
-    console.log("clicked");
       $(this).find('.panel').toggleClass('flipped');
   });
 
