@@ -4,8 +4,10 @@ $(document).ready(function(){
   var padding = (viewHeight - $(".intro-text").height()) / 2;
 
 
-  $('.flip').click(function(){
-    $(this).find('.panel').toggleClass('flipped');
+  $('.flip').click(function(e){
+    if(!$(e.target).hasClass('icon')){
+      $(this).find('.panel').toggleClass('flipped');
+    }
   });
 
   $(".scrollableLink").click(function(e){
