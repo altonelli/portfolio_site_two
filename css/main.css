@@ -173,6 +173,20 @@ h3.page-title {
   margin: 0 auto;
 }
 
+
+/*Hobbies Styling*/
+
+
+.hobbies{
+    background-color: #10A35C;
+}
+.hobbie-content{
+  width: 20vw;
+  height:20vw;
+  overflow: hidden;
+}
+
+
 .offtopic{
     background-color: #0A2239;
 }
@@ -184,6 +198,7 @@ h3.page-title {
 .handprints{
     background-color: #10A35C;
 }
+
 .chorus{
     background-color: #372549;
 }
