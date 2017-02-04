@@ -10,6 +10,20 @@ $(document).ready(function(){
     }
   });
 
+  var hobbyFadeIn = function (e){
+    $(this).find('.hobbie-img').addClass('on-hover');
+    $(this).find('.overlay').addClass('overlay-hover');
+  };
+  var hobbyFadeOut = function (e){
+    $(this).find('.hobbie-img').removeClass('on-hover');
+    $(this).find('.overlay').removeClass('overlay-hover');
+  };
+
+  $('.hobbie-content').hover(hobbyFadeIn,hobbyFadeOut);
+  $('.hobbie-content').focusin(hobbyFadeIn);
+  $('.hobbie-content').focusout(hobbyFadeIn);
+
+
   $(".scrollableLink").click(function(e){
     var target = $(this.getAttribute('href'));
     console.log(target);
