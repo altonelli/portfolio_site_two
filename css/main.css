@@ -88,7 +88,7 @@ h3.page-title {
 
 .flip{
   min-height: 400px;
-  width: 400px;
+  max-width: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -111,7 +111,7 @@ h3.page-title {
 }
 
 .about{
-    background-color: #F7B32B;
+    background-color: #3F88C5;
 }
 .about .panel {
   height: 575px;
@@ -174,8 +174,60 @@ h3.page-title {
   margin: 0 auto;
 }
 
+/* Projects Styling */
+.projects .front .container-fluid{
+  padding-left: 0;
+  margin-left: -3px;
+}
+.projects .demo-pic{
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+/*.card-text {
+  margin-left: 5px;
+}*/
 
-/*Hobbies Styling*/
+/* Discoverfy Styling */
+.discoverfy .demo-pic{
+ height: 300px;
+ margin-top: -5px;
+ margin-bottom: 5px;
+}
+.discoverfy .turn-around-icon{
+  margin-top: -8px;
+  margin-right: -10px
+}
+.discoverfy .turn-around-icon.img-mirror{
+  margin-top: 0px;
+  margin-right: -10px
+}
+
+/* Ava Styling */
+#ava .turn-around-icon {
+  position: relative;
+  margin-right: -10px;
+  margin-top: 37px;
+}
+#ava .turn-around-icon.img-mirror {
+  position: relative;
+  margin-left: -15px;
+  margin-top: -12px;
+}
+
+/* Chorus Styling */
+#chorus .turn-around-icon {
+  position: relative;
+  margin-right: -10px;
+  margin-top: 20px;
+}
+#chorus .turn-around-icon.img-mirror {
+  position: relative;
+  margin-left: -15px;
+  margin-top: 12px;
+}
+
+
+/* Hobbies Styling */
 header.hobbies{
   min-height: 100%
 }
@@ -231,6 +283,10 @@ header.hobbies{
 
 
 @media only screen and (max-width: 780px) {
+  #intro .title {
+    margin-top: 50px;
+  }
+
   .overlay{
     font-size:3em;
     padding-left: 15px;
@@ -256,7 +312,7 @@ header.hobbies{
 }
 
 .chorus{
-    background-color: #372549;
+    background-color: #4C4C9D;
 }
 .contact{
     background-color: #EDB036;
