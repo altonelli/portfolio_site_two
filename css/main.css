@@ -9,12 +9,12 @@ body {
   top: 0;
   width: 100%;
   z-index: 2;
-  opacity: .70;
+  opacity: 1;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
   border-radius: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
   border-color: rgba(255, 255, 255, .8);
 
 }
@@ -83,7 +83,7 @@ h3.page-title {
   border-radius: 2px;
   margin-top: 20px;
   min-height: 400px;
-  height: 400px;
+  /*height: 400px;*/
 }
 
 .flip{
@@ -110,60 +110,29 @@ h3.page-title {
     background-color: #F72C25;
 }
 
-.about{
-    background-color: #3F88C5;
-}
-.about .panel {
-  height: 575px;
-}
-
-.about .container-fluid {
-  padding-left: 5px;
-  padding-right: 20px;
-}
-.about p{
-  margin-bottom: 0;
-}
 
 .turn-around-icon{
   height: 22px;
   width: 22px;
-  margin: -10px 2px 2px 2px;
-}
+  margin: -18px -13px 2px 2px;
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
 
-.about .back .panel-footer{
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.img-mirror.turn-around-icon {
-  margin-top: 15px;
-}
-
-.projects .img-mirror.turn-around-icon{
-  margin-top: 15px;
-  margin-left: -28px;
-}
-
-.projects .turn-around-icon{
-  height: 22px;
-  width: 22px;
-  margin: -10px 2px 2px 2px;
 }
 
 .img-mirror {
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1) rotate(270deg);
+  transform: scaleX(-1) rotate(270deg);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  -ms-transform: rotate(270deg);
+  margin: -18px 0px 0px -20px;
 }
 
-.about-pic {
-  border: 0px solid transparent;
-  border-radius: 2px;
-}
+
 
 .discoverfy{
     background-color: #2AB7CA;
@@ -174,7 +143,35 @@ h3.page-title {
   margin: 0 auto;
 }
 
+/*****************/
+/* About Styling */
+/*****************/
+.about{
+    background-color: #3F88C5;
+}
+.about .panel {
+  width: 400px;
+  height: 575px;
+}
+
+.about p{
+  margin-bottom: 0;
+}
+
+.about-pic {
+  border: 0px solid transparent;
+  border-radius: 2px;
+}
+
+
+.about .back .panel-footer{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/********************/
 /* Projects Styling */
+/********************/
 .projects .front .container-fluid{
   padding-left: 0;
   margin-left: -3px;
@@ -183,51 +180,36 @@ h3.page-title {
   margin-top: 40px;
   margin-bottom: 15px;
 }
-/*.card-text {
-  margin-left: 5px;
-}*/
 
+/**********************/
 /* Discoverfy Styling */
+/**********************/
 .discoverfy .demo-pic{
  height: 300px;
  margin-top: -5px;
  margin-bottom: 5px;
 }
-.discoverfy .turn-around-icon{
-  margin-top: -8px;
-  margin-right: -10px
-}
-.discoverfy .turn-around-icon.img-mirror{
-  margin-top: 0px;
-  margin-right: -10px
-}
 
+/***************/
 /* Ava Styling */
-#ava .turn-around-icon {
-  position: relative;
-  margin-right: -10px;
-  margin-top: 37px;
-}
-#ava .turn-around-icon.img-mirror {
-  position: relative;
-  margin-left: -15px;
-  margin-top: -12px;
+/***************/
+
+.ava {
+  background-color: #F34213;
 }
 
+
+/******************/
 /* Chorus Styling */
-#chorus .turn-around-icon {
-  position: relative;
-  margin-right: -10px;
-  margin-top: 20px;
-}
-#chorus .turn-around-icon.img-mirror {
-  position: relative;
-  margin-left: -15px;
-  margin-top: 12px;
+/******************/
+.chorus{
+  background-color: #4C4C9D;
 }
 
 
+/*******************/
 /* Hobbies Styling */
+/*******************/
 header.hobbies{
   min-height: 100%
 }
@@ -282,13 +264,63 @@ header.hobbies{
 }
 
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 500px) {
   #intro .title {
     margin-top: 50px;
   }
 
+  .flip{
+    width:90vw;
+    margin: auto;
+  }
+
+  /****************/
+  /* About Mobile */
+  /****************/
+  .about .panel{
+    width: 90vw;
+    margin: auto;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+  .about .panel .container-fluid{
+    margin-left: -10px;
+    padding-right: 0px;
+  }
+  /*********************/
+  /* Discoverfy Mobile */
+  /*********************/
+
+  .discoverfy .demo-pic {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+
+  /**************/
+  /* Ava Mobile */
+  /**************/
+
+  #ava .demo-pic {
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+
+
+  /*****************/
+  /* Chorus Mobile */
+  /*****************/
+
+  #chorus .demo-pic {
+    margin-top: 90px;
+    margin-bottom: 25px;
+  }
+
+  /*****************/
+  /* Hobbie Mobile */
+  /*****************/
   .overlay{
-    font-size:3em;
+    font-size:2em;
     padding-left: 15px;
 
   }
@@ -303,16 +335,8 @@ header.hobbies{
     background-color: #0A2239;
 }
 
-.ava{
-    background-color: #F34213;
-}
-
 .handprints{
     background-color: #10A35C;
-}
-
-.chorus{
-    background-color: #4C4C9D;
 }
 .contact{
     background-color: #EDB036;
