@@ -151,7 +151,9 @@ h3.page-title {
 }
 .about .panel {
   width: 400px;
-  height: 575px;
+  min-height: 575px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .about p{
