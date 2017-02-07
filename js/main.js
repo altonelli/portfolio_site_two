@@ -24,6 +24,36 @@ $(document).ready(function(){
   $('.hobbie-content').focusout(hobbyFadeIn);
 
 
+  $(".navbar-toggle").click(function(e){
+    $('.navbar-collapse').find('.background-blur').toggleClass('.blur');
+  });
+
+  $(window).scroll(function(e){
+    var top = $(window).scrollTop();
+    var $headers = $('header');
+
+    var headerIdx;
+    $.each($headers, function(idx,item){
+      if($(item).position().top <= top + 50){
+        headerIdx = idx;
+      }
+    });
+    var $currentId = $headers[headerIdx].id;
+    var color = $("#"+$currentId).css('background-color');
+    var len = color.length + 1;
+    var rgbaColor = color.substring(0,3) + "a" + color.substring(3,len-2) + ", 0.9)";
+    $('nav').css('background-color',color);
+    // if($(window).width() <= 768){
+    //   console.log("yes");
+    //   $('.navbar-header').css('background-color',color);
+    //   $('.navbar-collapse').css('background-color',rgbaColor);
+    // } else {
+    //   $('nav').css('background-color',color);
+    // }
+  });
+
+
+
   $(".scrollableLink").click(function(e){
     var target = $(this.getAttribute('href'));
     console.log(target);

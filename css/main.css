@@ -3,6 +3,25 @@ body {
   font-family: 'Questrial', sans-serif;
 }
 
+/*.background-blur{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 50px;
+  display: block;
+  background-color: rgba(0, 0, 0, .8);
+
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}*/
+
+
 .navbar {
   position: fixed;
   left: 0;
@@ -14,9 +33,9 @@ body {
   border-left: 0px;
   border-right: 0px;
   border-radius: 0;
-  background-color: rgba(0, 0, 0, 0.25);
-  border-color: rgba(255, 255, 255, .8);
-
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -147,6 +166,7 @@ h3.page-title {
 /* About Styling */
 /*****************/
 .about{
+    /*background-color: rgba(56,133,196,.5);*/
     background-color: #3F88C5;
 }
 .about .panel {
@@ -264,6 +284,18 @@ header.hobbies{
   transition: opacity 200ms ease-in-out;
   opacity: 1;
 }
+@media only screen and (max-width: 780px) {
+  .overlay{
+    font-size:3em;
+    padding-left: 15px;
+
+  }
+
+  .hobbie-content{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
 
 
 @media only screen and (max-width: 500px) {
@@ -326,6 +358,7 @@ header.hobbies{
     padding-left: 15px;
 
   }
+
   .hobbie-content{
     margin-top: 30px;
     margin-bottom: 30px;
