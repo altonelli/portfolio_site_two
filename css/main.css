@@ -34,8 +34,9 @@ body {
   border-right: 0px;
   border-radius: 0;
   background-color: transparent;
-  border-color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 0);
   overflow: hidden;
+  box-shadow: 0px 2px 20px -3px rgba(0, 0, 0, .7);
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -127,6 +128,7 @@ h3.page-title {
 
 .intro{
     background-color: #F72C25;
+    background-color: #F1433F;
 }
 
 
@@ -151,11 +153,6 @@ h3.page-title {
   margin: -18px 0px 0px -20px;
 }
 
-
-
-.discoverfy{
-    background-color: #2AB7CA;
-}
 .demo-pic{
   max-height: 400px;
   max-width: 100%;
@@ -168,6 +165,8 @@ h3.page-title {
 .about{
     /*background-color: rgba(56,133,196,.5);*/
     background-color: #3F88C5;
+    background-color: #487DB9;
+    /*color: #343844;*/
 }
 .about .panel {
   width: 400px;
@@ -206,11 +205,18 @@ h3.page-title {
 /**********************/
 /* Discoverfy Styling */
 /**********************/
+
+.discoverfy{
+    background-color: #2AB7CA;
+    background-color: #33A8D9;
+}
+
 .discoverfy .demo-pic{
  height: 300px;
  margin-top: -5px;
  margin-bottom: 5px;
 }
+
 
 /***************/
 /* Ava Styling */
@@ -218,6 +224,7 @@ h3.page-title {
 
 .ava {
   background-color: #F34213;
+  background-color: #6C80C7;
 }
 
 
@@ -225,7 +232,8 @@ h3.page-title {
 /* Chorus Styling */
 /******************/
 .chorus{
-  background-color: #4C4C9D;
+  background-color: #70B7BA;
+  background-color: #334B87;
 }
 
 
@@ -237,6 +245,8 @@ header.hobbies{
 }
 .hobbies{
   background-color: #10A35C;
+  background-color: #487DB9;
+
 }
 .hobbie-content{
   height: 100%;
@@ -375,4 +385,5 @@ header.hobbies{
 }
 .contact{
     background-color: #EDB036;
+    background-color: #33A8D9;
 }
